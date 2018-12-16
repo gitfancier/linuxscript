@@ -1,0 +1,15 @@
+megs:32
+romimage: file=$BXSHARE/BIOS-bochs-latest 
+#romimage: file=bios/seabios-1.6.3.bin
+#romimage: file=mybios.bin, address=0xfff80000 # 512k at memory top
+memory: guest=512, host=256
+#vgaromimage: file=bios/VGABIOS-elpin-2.40
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+#vgaromimage: file=bios/VGABIOS-lgpl-latest-cirrus
+boot: disk
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+#ata0-master: type=disk, mode=flat, path="hd60M.img", cylinders=121, heads=16, spt=63
+ata0-master: type=disk, path="hd60M.img", mode=flat, cylinders=121, heads=16, spt=63
+#ata0-master: type=disk, mode=flat, path="30M.sample", cylinders=615, heads=6, spt=17
+#ata0-master: type=disk, mode=flat, path="c.img", cylinders=0 # autodetect
+log: bochsout.txt

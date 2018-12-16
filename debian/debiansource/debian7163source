@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#debian jessie version
+ 
+cp /etc/apt/sources.list.old /etc/apt/sources.list
+echo
+"deb http://mirrors.163.com/debian jessie main non-free contrib 
+deb http://mirrors.163.com/debian jessie-proposed-updates main contrib non-free
+deb http://mirrors.163.com/debian-security jessie/updates main contrib non-free
+deb http://security.debian.org jessie/updates main contrib non-free">/etc/apt/sources.list
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "call1:"
+./bcall
+bash bcall1
+sh bcall3
+source bcall4

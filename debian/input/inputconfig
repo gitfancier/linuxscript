@@ -1,0 +1,99 @@
+#!/bin/bash
+#变量定义
+m1="add-apt-repository ppa:fcutx-team/nightly";
+m2="apt-get install fcitx fcitx-sogoupinyin";
+m3="apt-get install fcitx-config-gtk";
+m4="apt-get install fcitx-frontend-all";
+m5="apt-get install fcitx-module-cloudpinyin";
+m6="apt-get install fcitx-ui-classic";
+#条件定义
+if add-apt-repository ppa:fcutx-team/nightly
+then
+m_1=1;
+echo "$m1 sucess!"
+else
+echo "$m1 def!"
+fi
+
+if apt-get install fcitx fcitx-sogoupinyin
+then
+m_2=1;
+echo "$m2 sucess!"
+else
+echo "$m2 def!"
+fi
+
+if apt-get install fcitx-config-gtk 
+then
+m_3=1;
+echo "$m3 sucess!"
+else
+echo "$m3 def!"
+fi
+
+if apt-get install fcitx-frontend-all 
+then
+m_4=1;
+echo "$m4 sucess!"
+else
+echo "$m4 def!"
+fi
+
+if apt-get install fcitx-module-cloudpinyin
+then
+m_5=1;
+echo "$m5 sucess!"
+else
+echo "$m5 def!"
+fi
+
+if apt-get install fcitx-ui-classic
+then
+m_6=1;
+echo "$m6 sucess!"
+else
+echo "$m6 def!"
+fi
+#结果显示
+#1
+if [ $m_1 -ne 0 ]
+then
+echo "$m1 sucess!"
+else
+echo "$m1 fefeated!"
+fi
+#2
+if [ $m2 -ne 0 ]
+then 
+echo "$m2 sucess!"
+else
+echo "$m2 defeated!"
+fi
+#3
+if [ $m3 -ne 0 ]
+then
+echo "$m3 sucess！"
+else
+echo "$m3 defeated!"
+fi
+#4
+if [ $m4 -ne 0 ]
+then
+echo "$m4 sucess!"
+else
+echo "$m4 defeated!"
+#5
+if [ $m5 -ne 0 ]
+then
+echo "$m5 sucess!"
+else
+echo "$m5 defeated!"
+fi
+#6
+if [ $m6 -ne 0 ]
+then
+echo "$m6 sucess!"
+else
+echo "$m6 defeated!"
+fi
+

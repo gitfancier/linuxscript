@@ -1,0 +1,82 @@
+#!/bin/bash
+#变量定义
+m1="apt-get install gnome-devel";
+m2="apt-get install pkg-config";
+m3="apt-get install devhelp";
+m4="apt-get install libglib2.0-doc libgtk2.0-doc";
+m5="apt-get install glade libglade2-dev";
+#条件定义
+if apt-get install gnome-devel
+then
+m_1=1;
+echo "$m1 sucess!"
+else
+echo "$m1 defeated!"
+fi
+
+if apt-get install pkg-config
+then
+m_2=1;
+echo "$m2 sucess!"
+else
+echo "$m2 defeatedeated!"
+fi
+
+if apt-get install devhelp 
+then
+m_3=1;
+echo "$m3 sucess!"
+else
+echo "$m3 defeated!"
+fi
+
+if apt-get install libglib2.0-doc libgtk2.0-doc 
+then
+m_4=1;
+echo "$m4 sucess!"
+else
+echo "$m4 defeated!"
+fi
+
+if apt-get install glade libglade2-dev
+then
+m_5=1;
+echo "#1 $m5 sucess!"
+else
+echo "#1 $m5 defeated!"
+fi
+#结果显示
+#1
+if [ $m_1 -ne 0 ]
+then
+echo "#1 $m1 sucess!"
+else
+echo "#1 $m1 fefeated!"
+fi
+#2
+if [ $m_2 -ne 0 ]
+then 
+echo "#2 $m2 sucess!"
+else
+echo "#2 $m2 defeated!"
+fi
+#3
+if [ $m_3 -ne 0 ]
+then
+echo "#3 $m3 sucess！"
+else
+echo "#3 $m3 defeated!"
+fi
+#4
+if [ $m_4 -ne 0 ]
+then
+echo "#4 $m4 sucess!"
+else
+echo "#4 $m4 defeated!"
+#5
+if [ $m_5 -ne 0 ]
+then
+echo "#5 $m5 sucess!"
+else
+echo "#5 $m5 defeated!"
+fi
